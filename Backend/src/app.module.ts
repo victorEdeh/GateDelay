@@ -38,6 +38,7 @@ import { AppCacheModule } from './cache/cache.module';
 import { NotificationModule } from './notifications/notification.module';
 import { TradeEngineModule } from './trade-engine/trade-engine.module';
 import { TradeReconciliationModule } from './trade-reconciliation/trade-reconciliation.module';
+import { VerificationModule } from './verification/verification.module';
 
 @Module({
   imports: [
@@ -97,6 +98,7 @@ import { TradeReconciliationModule } from './trade-reconciliation/trade-reconcil
     NotificationModule,
     TradeEngineModule,
     TradeReconciliationModule,
+    VerificationModule,
   ],
   controllers: [AppController],
   providers: [AppService],
