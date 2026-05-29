@@ -1,6 +1,5 @@
 import { Injectable } from '@nestjs/common';
-import { createHash } from 'crypto';
-import { v4 as uuidv4 } from 'uuid';
+import { createHash, randomUUID } from 'crypto';
 import { AuditLog, AuditReport } from './market-audit.entity';
 
 @Injectable()
@@ -21,7 +20,7 @@ export class MarketAuditService {
 
     const createdAt = new Date().toISOString();
     const log: AuditLog = {
-      id: uuidv4(),
+      id: randomUUID(),
       marketId: input.marketId,
       operation: input.operation,
       actor: input.actor,
