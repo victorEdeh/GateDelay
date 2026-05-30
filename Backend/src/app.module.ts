@@ -41,6 +41,8 @@ import { MarketMonitoringModule } from './market-monitoring/market-monitoring.mo
 import { TradeReconciliationModule } from './trade-reconciliation/trade-reconciliation.module';
 import { MarketAuditModule } from './market-audit/market-audit.module';
 import { VerificationModule } from './verification/verification.module';
+import { MarketMetadataModule } from './market-metadata/market-metadata.module';
+import { EventNotificationModule } from './event-notifications/event-notification.module';
 
 @Module({
   imports: [
@@ -103,6 +105,8 @@ import { VerificationModule } from './verification/verification.module';
     TradeReconciliationModule,
     MarketAuditModule,
     VerificationModule,
+    MarketMetadataModule,
+    EventNotificationModule,
   ],
   controllers: [AppController],
   providers: [AppService],
